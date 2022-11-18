@@ -11,36 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- head of site -->
     <header class="site-header">
-      <div class="container div-nav">
+      <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="site-logo"
             ><span class="logo">Web</span>Studio</a
           >
-          <ul class="menu-nav list">
-            <li class="nav-item">
-              <a href="./index.html" class="head-text current">Студія</a>
+          <ul class="nav__item list">
+            <li class="nav__list">
+              <a href="./index.html" class="nav__link nav__link--current">Студія</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="head-text">Портфоліо</a>
+            <li class="nav__list">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="head-text">Контакти</a>
+            <li class="nav__list">
+              <a href="" class="nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="nav-contact list">
-          <li class="mail-tel">
-            <a href="mailto:info@devstudio.com" class="mail-tel">
-              <svg width="16" height="12" class="contact-icons">
+        <ul class="nav__contact list">
+          <li class="nav__connection">
+            <a href="mailto:info@devstudio.com" class="nav__links">
+              <svg width="16" height="12" class="nav__icons">
                 <use
                   class="envelope"
                   href="./images/goit-svg.svg#icon-envelope"
@@ -48,9 +44,9 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="tel-mail tel">
-            <a href="tel:+380961111111" class="tel-mail">
-              <svg width="10" height="16" class="contact-icons">
+          <li class="nav__connection">
+            <a href="tel:+380961111111" class="nav__links">
+              <svg width="10" height="16" class="nav__icons">
                 <use
                   class="smartphone"
                   href="./images/goit-svg.svg#icon-smartphone"
@@ -64,100 +60,99 @@
     <!-- main content -->
     <main>
       <!-- hero -->
-      <section class="hero-section overlay">
-        <div class="container hb">
-          <h1 class="hero-title">
+      <section class="hero overlay">
+        <div class="container hero__container">
+          <h1 class="hero__title">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button type="button" class="hero-button" data-modal-open>
+          <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="close-button" data-modal-close>
-                <svg class="close-btn" width="18px" height="18px">
+              <button class="modal__button" data-modal-close>
+                <svg class="modal__btn" width="18px" height="18px">
                   <use
-                    class="close-icon"
                     href="./images/goit-svg.svg#icon-X"
                   ></use>
                 </svg>
               </button>
-              <form class="register-form" autocomplete="off">
-                <strong class="strong-form"
+              <form class="register" autocomplete="off">
+                <strong class="strong"
                   >Залиште свої дані, ми вам передзвонимо</strong
                 >
-                <div class="register-div" role="group">
-                  <label class="register-label">
-                    <span class="register-text"> Ім'я </span>
-                    <div class="div-input">
+                <div class="form" role="group">
+                  <label class="form__label">
+                    <span class="form__text"> Ім'я </span>
+                    <div class="form-container">
                       <input
                         type="text"
                         name="username"
-                        class="register-input"
+                        class="form__input"
                         required
                       />
-                      <svg class="icon-modal">
+                      <svg class="form__icon">
                         <use href="./images/goit-svg.svg#icon-name"></use>
                       </svg>
                     </div>
                   </label>
-                  <label class="register-label">
-                    <span class="register-text"> Телефон </span>
-                    <div class="div-input">
+                  <label class="form__label">
+                    <span class="form__text"> Телефон </span>
+                    <div class="form-container">
                       <input
                         type="tel"
                         name="tel"
-                        class="register-input"
+                        class="form__input"
                         required
                       />
-                      <svg class="icon-modal">
+                      <svg class="form__icon">
                         <use href="./images/goit-svg.svg#icon-phone"></use>
                       </svg>
                     </div>
                   </label>
-                  <label class="register-label">
-                    <span class="register-text"> Пошта </span>
-                    <div class="div-input">
+                  <label class="form__label">
+                    <span class="form__text"> Пошта </span>
+                    <div class="form-container">
                       <input
                         type="email"
                         name="mail"
-                        class="register-input"
+                        class="form__input"
                         required
                       />
-                      <svg class="icon-modal">
+                      <svg class="form__icon">
                         <use href="./images/goit-svg.svg#icon-mail"></use>
                       </svg>
                     </div>
                   </label>
-                  <label class="register-label">
-                    <span class="register-text"> Коментар </span>
+                  <label class="form__label">
+                    <span class="form__text"> Коментар </span>
                     <textarea
                       name="comment"
                       rows="5"
-                      class="register-area"
+                      class="form__area"
                       placeholder="Введіть текст"
                     ></textarea>
                   </label>
                 </div>
-                <label class="checkbox-label">
+                <label class="checkbox">
                   <input
                     type="checkbox"
                     name="policy"
                     value="accept-policy"
-                    class="checkbox-input"
+                    class="checkbox__input"
                   />
-                  <span class="checkbox-icon">
-                    <svg width="16px" height="15px" class="icon-check">
+                  <span class="checkbox__icon">
+                    <svg width="16px" height="15px" class="checkbox__check">
                       <use href="./images/goit-svg.svg#icon-check2"></use>
                     </svg>
                   </span>
-                  <span class="check-span">
+                  <span class="checkbox__text">
                     Погоджуюся з розсилкою та приймаю
-                    <a href="" class="checkbox-link">Умови договору</a>
+                    <a href="" class="checkbox__link">Умови договору</a>
                   </span>
                 </label>
-                <button type="submit" class="register-btn">Відправити</button>
+                <button type="submit" class="form__button">Відправити</button>
               </form>
             </div>
           </div>

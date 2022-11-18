@@ -1,0 +1,43 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+.list {
+    margin-left: 0px;
+    margin-right: 0px;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

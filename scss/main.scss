@@ -1,0 +1,22 @@
+/* base*/ 
+@import './base/modern-normalize';
+@import './base/base';
+@import './base/font';
+
+/* utils*/ 
+@import './utils/varibles';
+@import './utils/visually-hidden';
+
+/* components */
+
+/* header */
+
+@import './components/header';
+@import './components/nav';
+@import './components/contacts';
+
+/* main */
+
+@import './components/hero';
+@import './components/modal';
+@import './components/register';
