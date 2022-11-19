@@ -12,14 +12,10 @@
 }
 
 .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    @include centeredFlex;
     height: 120px;
     background: var(--bg-button);
     border-radius: 4px;
-
     margin-bottom: 30px;
 }
 

@@ -51,9 +51,7 @@
 }
 
 .social__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
     width: 44px;
     min-height: 44px;
     color: var(--bg-logo);

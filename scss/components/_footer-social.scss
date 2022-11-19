@@ -15,10 +15,12 @@
     margin-top: 20px;
 }
 
+.footer-social__list + .footer-social__list {
+    margin-left: 10px;
+}
+
 .footer-social__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
     width: 44px;
     min-height: 44px;
     color: var(--white-color);
@@ -76,10 +78,8 @@
 }
 
 .subscribe-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto';
+    @include centeredFlex;
+    font-family: $fontPrimary;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

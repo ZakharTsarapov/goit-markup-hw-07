@@ -133,9 +133,7 @@
 }
 
 .checkbox__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+ @include centeredFlex(inline-flex);
   width: 16px;
   height: 15px;
   margin-left: 10px;
@@ -148,9 +146,7 @@
 }
 
 .checkbox__check {
-  display: block;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex(block);
   opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;
@@ -171,9 +167,7 @@
 }
 
 .form__button {
-  display: block;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex(block);
   margin: 0 auto;
   padding: 10px 52px;
   font-style: normal;

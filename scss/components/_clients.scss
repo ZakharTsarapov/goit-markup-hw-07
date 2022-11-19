@@ -11,9 +11,7 @@
 }
 
 .clients__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
     height: 92px;
     color: var(--bg-logo);
     border-radius: 4px;

@@ -4,6 +4,8 @@
 @import './base/font';
 
 /* utils*/ 
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './utils/varibles';
 @import './utils/visually-hidden';
 
@@ -12,6 +14,7 @@
 /* header */
 
 @import './components/header';
+@import './components/logo';
 @import './components/nav';
 @import './components/contacts';
 
